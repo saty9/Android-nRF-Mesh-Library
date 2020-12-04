@@ -1255,7 +1255,7 @@ public class MeshManagerApi implements MeshMngrApi {
         if (!mMeshNetwork.getSelectedProvisioner().isAddressWithinAllocatedRange(mMeshNetwork.getUnicastAddress())) {
             throw new IllegalArgumentException("Address assigned to node is outside of provisioner's allocated unicast range.");
         }
-        node.setUnicastAddress(mMeshNetwork.getUnicastAddress());
+        node.setUnicastAddress(unicast);
         return true;
     }
 }
